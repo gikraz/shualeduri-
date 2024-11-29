@@ -1,0 +1,295 @@
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+header h1.dark-mode-text {
+  color: #fff;
+}
+
+.cart span {
+  font-size: 18px;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger-icon {
+  width: 30px;
+  height: 4px;
+  color: #ddd;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.toggle-button {
+  background-color: transparent;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #ff6600;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar li {
+  padding: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.navbar .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail-images img {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details {
+  flex: 1;
+  max-width: 400px;
+}
+
+.details h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.details .price {
+  font-size: 20px;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.actions button:first-child {
+  background-color: #ff6600;
+  color: white;
+}
+
+.actions button:last-child {
+  background-color: #ddd;
+  color: #333;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.modal img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.modal-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-thumbnails img {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #f7f7f7;
+}
+
+header.dark-mode {
+  background-color: #222;
+  color: #f7f7f7;
+}
+
+.navbar.dark-mode {
+  background-color: #222;
+  color: #f7f7f7;
+}
+
+.product .main-image img.dark-mode {
+  border: 2px solid #555;
+}
+
+.actions button.dark-mode {
+  background-color: #444;
+  color: #fff;
+}
+
+.modal.dark-mode {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar a {
+  color: #f7f7f7;
+}
+
+body.dark-mode button {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.navbar.open a {
+  color: #333;
+}
+
+.navbar.dark-mode a {
+  color: #fff;
+}
+
+.navbar.open .close-btn {
+  color: #333;
+}
+
+.navbar.open.dark-mode .close-btn {
+  color: white;
+}
